@@ -1,11 +1,614 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Portfólio de Fernanda Calvi de Barros, estudante de Sistemas de Informação com foco em Engenharia de Dados, Desenvolvimento de Software e AWS."
+  >
+
+  <title>Fernanda Calvi | Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script src="js/script.js" defer></script>
 </head>
+
 <body>
-    <h1>Em desenvolvimento...</h1>
+  <!-- Cabeçalho e navegação principal -->
+  <header class="header">
+    <button
+      class="menu-button"
+      id="menu-button"
+      type="button"
+      aria-label="Abrir menu"
+      aria-controls="navigation"
+      aria-expanded="false"
+    >
+      Menu
+    </button>
+
+    <nav
+      class="navigation"
+      id="navigation"
+      aria-label="Navegação principal"
+    >
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#formacao">Formação</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button
+      class="theme-button"
+      id="theme-button"
+      type="button"
+      aria-label="Ativar tema escuro"
+      title="Ativar tema escuro"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"
+        ></path>
+      </svg>
+    </button>
+  </header>
+
+  <!-- Conteúdo principal do portfólio -->
+  <main>
+    <!-- Apresentação -->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">Olá, eu sou a</p>
+
+        <h1>Fernanda Calvi<br>de Barros</h1>
+
+        <p>
+          Estudante de Sistemas de Informação e profissional da área de dados,
+          com foco em engenharia, desenvolvimento de software, automação e
+          soluções em cloud.
+        </p>
+
+        <ul class="tags" aria-label="Áreas de atuação">
+          <li>Data Engineering</li>
+          <li>Software Development</li>
+          <li>Observability &amp; Automation</li>
+          <li>AWS</li>
+        </ul>
+
+        <a class="button" href="#sobre">Explorar Portfólio</a>
+      </div>
+
+      <figure class="hero-image">
+        <img
+          src="img/foto-perfil.jpg"
+          alt="Foto profissional de Fernanda Calvi de Barros"
+        >
+      </figure>
+    </section>
+
+    <!-- Sobre mim, objetivos profissionais e tecnologias -->
+    <section id="sobre">
+      <div class="section-heading">
+        <span>Sobre mim</span>
+        <h2>Dados, tecnologia e aprendizado contínuo</h2>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            Sou estudante do sexto período de Sistemas de Informação e atuo na
+            área de dados, participando do desenvolvimento de soluções em
+            ambiente cloud, especialmente na AWS.
+          </p>
+
+          <p>
+            Minha experiência envolve a construção e a observabilidade de
+            pipelines, automações e organização de dados para análise. Busco
+            unir engenharia de dados e desenvolvimento de software para criar
+            soluções confiáveis e úteis.
+          </p>
+
+          <p>
+            Também tenho interesse em aprendizado contínuo, novas tecnologias,
+            projetos de software e conteúdos relacionados a dados e cloud
+            computing.
+          </p>
+
+          <p>
+            Fora do universo da tecnologia, gosto de ouvir música, assistir a filmes,
+            testar novas receitas e aproveitar o tempo com os meus gatos. Essas atividades
+            fazem parte da minha rotina e contribuem para meu equilíbrio, criatividade
+            e curiosidade.
+          </p>
+        </div>
+
+        <aside class="goals">
+          <h3>Objetivos profissionais</h3>
+
+          <ul>
+            <li>Engenharia de Dados</li>
+            <li>Desenvolvimento de Software</li>
+            <li>Cloud Computing</li>
+            <li>Automação</li>
+            <li>Observabilidade</li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="about-technologies">
+        <div class="technology-heading">
+          <h3>Tecnologias</h3>
+
+          <p>
+            Principais linguagens, ferramentas e plataformas que utilizo.
+          </p>
+        </div>
+
+        <div class="technology-stack">
+          <div class="technology-row">
+            <h4>Linguagens</h4>
+
+            <ul class="technology-list">
+              <li>
+                <img src="https://cdn.simpleicons.org/python" alt="">
+                Python
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/javascript" alt="">
+                JavaScript
+              </li>
+
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+                  alt=""
+                >
+                SQL
+              </li>
+            </ul>
+          </div>
+
+          <div class="technology-row">
+            <h4>Front-end</h4>
+
+            <ul class="technology-list">
+              <li>
+                <img src="https://cdn.simpleicons.org/html5" alt="">
+                HTML5
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/css" alt="">
+                CSS3
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/react" alt="">
+                React
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/vite" alt="">
+                Vite
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/tailwindcss" alt="">
+                Tailwind CSS
+              </li>
+            </ul>
+          </div>
+
+          <div class="technology-row">
+            <h4>Back-end</h4>
+
+            <ul class="technology-list">
+              <li>
+                <img src="https://cdn.simpleicons.org/nodedotjs" alt="">
+                Node.js
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/express" alt="">
+                Express
+              </li>
+            </ul>
+          </div>
+
+          <div class="technology-row">
+            <h4>Banco de Dados</h4>
+
+            <ul class="technology-list">
+              <li>
+                <img src="https://cdn.simpleicons.org/postgresql" alt="">
+                PostgreSQL
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/mysql" alt="">
+                MySQL
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/prisma" alt="">
+                Prisma ORM
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/dbeaver" alt="">
+                DBeaver
+              </li>
+            </ul>
+          </div>
+
+          <div class="technology-row">
+            <h4>Cloud &amp; DevOps</h4>
+
+            <ul class="technology-list">
+              <li>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                  alt=""
+                >
+                AWS
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/googlecloud" alt="">
+                Google Cloud
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/docker" alt="">
+                Docker
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/git" alt="">
+                Git
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/github" alt="">
+                GitHub
+              </li>
+
+              <li>
+                <img src="https://cdn.simpleicons.org/bitbucket" alt="">
+                Bitbucket
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formação acadêmica, cursos e idiomas -->
+    <section id="formacao">
+      <div class="section-heading">
+        <span>Formação</span>
+        <h2>Base acadêmica e especializações</h2>
+      </div>
+
+      <div class="education-layout">
+        <div class="education-main">
+          <article class="academic-highlight">
+            <span class="education-label">Formação acadêmica</span>
+
+            <div class="academic-information">
+              <div>
+                <h3>Sistemas de Informação</h3>
+                <p>Centro Universitário Internacional UNINTER</p>
+              </div>
+
+              <span class="academic-period">6º período</span>
+            </div>
+          </article>
+
+          <aside class="language-card">
+            <h3>Idiomas</h3>
+
+            <ul class="languages">
+              <li>
+                <img
+                  src="https://flagcdn.com/w40/br.png"
+                  alt="Bandeira do Brasil"
+                >
+
+                <span>
+                  Português
+                  <small>Nativo</small>
+                </span>
+              </li>
+
+              <li>
+                <img
+                  src="https://flagcdn.com/w40/us.png"
+                  alt="Bandeira dos Estados Unidos"
+                >
+
+                <span>
+                  Inglês
+                  <small>Intermediário</small>
+                </span>
+              </li>
+
+              <li>
+                <img
+                  src="https://flagcdn.com/w40/es.png"
+                  alt="Bandeira da Espanha"
+                >
+
+                <span>
+                  Espanhol
+                  <small>Básico</small>
+                </span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="courses-block">
+          <h3>Cursos e certificações</h3>
+
+          <ul class="course-list">
+            <li>
+              Fundamentos de Data Science e Inteligência Artificial
+            </li>
+
+            <li>
+              Fundamentos de Engenharia de Dados
+            </li>
+
+            <li>
+              Introduction to Data Engineering on Google Cloud
+            </li>
+
+            <li>
+              Google Cloud Fundamentals: Core Infrastructure
+            </li>
+
+            <li>
+              Scrum Fundamentals Certified
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projeto acadêmico desenvolvido para a disciplina -->
+    <section id="projetos">
+      <div class="section-heading">
+        <span>Portfólio</span>
+        <h2>Ideias em prática</h2>
+
+        <p>
+          Projetos que unem aprendizado, tecnologia e construção de soluções.
+        </p>
+      </div>
+
+      <article
+        class="academic-project"
+        data-category="academico"
+      >
+        <div class="project-content">
+          <span class="project-label">Projeto acadêmico</span>
+
+          <h3>Portfólio Pessoal</h3>
+
+          <p>
+            <strong class="current-project-note">
+              Este portfólio é o próprio projeto que você está navegando agora.
+            </strong>
+
+            Ele foi desenvolvido de forma responsiva para apresentar minha
+            trajetória, formação, tecnologias e projetos de maneira
+            profissional. Criado para a disciplina Fundamentos da Programação
+            Web, está publicado no GitHub Pages.
+          </p>
+
+          <ul
+            class="project-technologies"
+            aria-label="Tecnologias utilizadas"
+          >
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+          </ul>
+
+          <!-- O projeto atual possui somente o link do código porque já é o site exibido. -->
+          <div class="project-actions">
+            <a
+              class="button"
+              href="https://github.com/FernandaCalvi/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver código no GitHub
+            </a>
+          </div>
+        </div>
+
+        <aside class="project-resources">
+          <h4>Principais recursos</h4>
+
+          <ul class="project-features">
+            <li>Layout responsivo</li>
+            <li>Tema claro e escuro</li>
+            <li>Menu para dispositivos móveis</li>
+            <li>Navegação por âncoras</li>
+            <li>Formulário validado com JavaScript</li>
+          </ul>
+        </aside>
+      </article>
+    </section>
+
+    <!-- Canais de contato e formulário validado com JavaScript -->
+    <section id="contato">
+      <div class="section-heading">
+        <span>Contato</span>
+        <h2>Vamos conversar?</h2>
+
+        <p>
+          Entre em contato para trocar ideias sobre dados, tecnologia,
+          desenvolvimento e novas oportunidades.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <address class="contact-links">
+          <a class="contact-item" href="mailto:fcalvib@gmail.com">
+            <span class="contact-icon" aria-hidden="true">
+              <img
+                src="https://cdn.simpleicons.org/gmail"
+                alt=""
+              >
+            </span>
+
+            <span class="contact-text">
+              <strong>E-mail</strong>
+              <small>fcalvib@gmail.com</small>
+            </span>
+          </a>
+
+          <a
+            class="contact-item"
+            href="https://www.linkedin.com/in/fernandacalvi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-icon" aria-hidden="true">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                alt=""
+              >
+            </span>
+
+            <span class="contact-text">
+              <strong>LinkedIn</strong>
+              <small>fernandacalvi</small>
+            </span>
+          </a>
+
+          <a
+            class="contact-item"
+            href="https://github.com/FernandaCalvi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-icon" aria-hidden="true">
+              <img
+                src="https://cdn.simpleicons.org/github"
+                alt=""
+              >
+            </span>
+
+            <span class="contact-text">
+              <strong>GitHub</strong>
+              <small>FernandaCalvi</small>
+            </span>
+          </a>
+
+          <a
+            class="contact-item"
+            href="https://medium.com/@fernandacalvi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-icon" aria-hidden="true">
+              <img
+                src="https://cdn.simpleicons.org/medium"
+                alt=""
+              >
+            </span>
+
+            <span class="contact-text">
+              <strong>Medium</strong>
+              <small>@fernandacalvi</small>
+            </span>
+          </a>
+        </address>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div>
+            <label for="name">Nome</label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              placeholder="Digite seu nome"
+              required
+            >
+          </div>
+
+          <div>
+            <label for="email">E-mail</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              placeholder="nome@exemplo.com"
+              required
+            >
+          </div>
+
+          <div class="message-field">
+            <label for="message">Mensagem</label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Escreva sua mensagem"
+              required
+            ></textarea>
+          </div>
+
+          <button class="button" type="submit">
+            Enviar mensagem
+          </button>
+
+          <p
+            class="form-status"
+            id="form-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>
+      &copy; <span id="current-year"></span> Fernanda Calvi de Barros -
+      Dados, automação e software para resolver problemas reais.
+    </p>
+  </footer>
 </body>
 </html>
-
