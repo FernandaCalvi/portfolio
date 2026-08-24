@@ -34,9 +34,17 @@
   }
 }
 
-/* Menu responsivo e formação em uma coluna */
+/* Menu responsivo, formação e ajuste para tablets menores */
 
 @media (max-width: 850px) {
+  #sobre > .section-heading h2 {
+    white-space: normal;
+  }
+
+  .goals {
+    margin-top: 0;
+  }
+
   .header {
     gap: 12px;
   }
