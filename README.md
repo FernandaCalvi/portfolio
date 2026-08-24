@@ -43,6 +43,7 @@ portfolio/
 │   └── script.js
 ├── index.html
 └── README.md
+```
 
 ## Seções do portfólio
 
